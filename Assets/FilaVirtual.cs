@@ -28,6 +28,12 @@ public class FilaVirtual : MonoBehaviour
         if (CantEntradas < 4 & CodigoEntrada == "b")
         {
             precioTotal = CantEntradas * precioBasico;
+            Debug.Log("Tipo de entrada:");
+            Debug.Log(CodigoEntrada);
+            Debug.Log("Cantidad ");
+            Debug.Log(CantEntradas);
+            Debug.Log("Precio Total ");
+            Debug.Log(precioTotal);
         }
         else
         {
@@ -37,6 +43,12 @@ public class FilaVirtual : MonoBehaviour
         if (CantEntradas < 6 & CodigoEntrada == "n")
         {
             precioTotal = CantEntradas * precioNormal;
+            Debug.Log("Tipo de entrada:");
+            Debug.Log(CodigoEntrada);
+            Debug.Log("Cantidad ");
+            Debug.Log(CantEntradas);
+            Debug.Log("Precio Total ");
+            Debug.Log(precioTotal);
         }
         else
         {
@@ -48,7 +60,13 @@ public class FilaVirtual : MonoBehaviour
         {
             if (CantEntradas > 0 & CodigoEntrada == "p")
             {
-                precioTotal = ((CantEntradas * precioPremium) * 15)/100; 
+                precioTotal = ((CantEntradas * precioPremium) * 15)/100;
+                Debug.Log("Tipo de entrada:");
+                Debug.Log(CodigoEntrada);
+                Debug.Log("Cantidad ");
+                Debug.Log(CantEntradas);
+                Debug.Log("Precio Total ");
+                Debug.Log(precioTotal);
             }
             else
             {
@@ -61,6 +79,12 @@ public class FilaVirtual : MonoBehaviour
             if (CantEntradas > 0 & CodigoEntrada == "p")
             {
                 precioTotal = (CantEntradas * 2000);
+                Debug.Log("Tipo de entrada:");
+                Debug.Log(CodigoEntrada);
+                Debug.Log("Cantidad ");
+                Debug.Log(CantEntradas);
+                Debug.Log("Precio Total ");
+                Debug.Log(precioTotal);
             }
             else
             {
@@ -69,12 +93,7 @@ public class FilaVirtual : MonoBehaviour
             }
 
         }
-        Debug.Log("Tipo de entrada:");
-        Debug.Log(CodigoEntrada);
-        Debug.Log("Cantidad ");
-        Debug.Log(CantEntradas);
-        Debug.Log("Precio Total ");
-        Debug.Log(precioTotal);
+       
 
     } 
 
