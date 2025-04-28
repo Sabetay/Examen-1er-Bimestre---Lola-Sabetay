@@ -6,7 +6,7 @@ using UnityEngine;
 public class FilaVirtual : MonoBehaviour
 {
     public string CodigoEntrada;
-    public int CantEntradas;
+    public float CantEntradas;
     public string Prioridad;
     float precioTotal;
     float precioBasico = 800;
@@ -48,7 +48,7 @@ public class FilaVirtual : MonoBehaviour
         {
             if (CantEntradas > 0 & CodigoEntrada == "p")
             {
-                precioTotal = (CantEntradas * precioPremium) + 15; // me tira error el signo de porcentaje
+                precioTotal = ((CantEntradas * precioPremium) * 15)/100; 
             }
             else
             {
@@ -69,8 +69,15 @@ public class FilaVirtual : MonoBehaviour
             }
 
         }
+        Debug.Log("Tipo de entrada:");
+        Debug.Log(CodigoEntrada);
+        Debug.Log("Cantidad ");
+        Debug.Log(CantEntradas);
+        Debug.Log("Precio Total ");
+        Debug.Log(precioTotal);
 
-    }
+    } 
+
 }
 
 
