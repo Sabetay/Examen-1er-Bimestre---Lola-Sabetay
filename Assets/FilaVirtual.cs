@@ -12,7 +12,7 @@ public class FilaVirtual : MonoBehaviour
     float precioBasico = 800;
     float precioNormal = 1200;
     float precioPremium = 2000;
-    float Descuento;
+    
 
     void Start()
     {
